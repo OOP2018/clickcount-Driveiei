@@ -15,6 +15,7 @@ import javafx.stage.Stage;
  * This has only one component (but you can add more components),
  * so write it in code instead of FXML.
  *
+ * @author Kornphon Noiprasert
  */
 public class CounterView implements java.util.Observer {
 	/** the stage (top-level window) for showing scene */

@@ -1,10 +1,12 @@
 package counter;
+
 /**
  * A simple counter.
+ * 
+ * @author Kornphon Noiprasert
  */
-
-public class Counter  {
-	private int count;
+public class Counter extends java.util.Observable{
+	private int count = 0;
 	
 	public Counter() {
 		this.count = 0;
