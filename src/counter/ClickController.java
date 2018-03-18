@@ -18,17 +18,24 @@ public class ClickController {
 	private Counter counter = null;
 
 	/**
+	 * To initialize the counter.
+	 * 
 	 * @param counter the counter to set.
 	 * */
 	public void setCounter(Counter counter) {
 		this.counter = counter;
 	}
 	
+	/**
+	 * Plus the number of counter by 1.
+	 * */
 	public void plusButtonHandler(ActionEvent event) {
 		counter.add(1);
 	}
 	
-	
+	/**
+	 * Minus the number of counter by 1.
+	 * */
 	public void minusButtonHandler(ActionEvent event) {
 		counter.add(-1);
 	}

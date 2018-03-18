@@ -8,15 +8,18 @@ package counter;
 public class Counter extends java.util.Observable{
 	private int count = 0;
 	
+	/**To initialize the counter. */
 	public Counter() {
 		this.count = 0;
 	}
 	
+	/**
+	 * Add the number that want to count.
+	 * 
+	 * @param howmuch - the number that user want to add.
+	 * */
 	public void add(int howmuch) {
 		count += howmuch;
-		//TODO notify the observers that the value has changed!
-		//TODO to minimize call-backs from the Observers, include
-		//TODO the new counter value as a parameter to notifyObserver().
 		// Its like if the Bank sends you an SMS whenever money
 		// is deposited in your account. If the SMS just says 
 		// "you received a deposit" then you need to login to check it.
@@ -26,6 +29,11 @@ public class Counter extends java.util.Observable{
 		notifyObservers();
 	}
 	
+	/**
+	 * Get the count of counter
+	 *
+	 * @return count - how much times are count.
+	 * */
 	public int getCount() {
 		return count;
 	}
