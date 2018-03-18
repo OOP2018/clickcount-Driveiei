@@ -16,12 +16,15 @@ import javafx.fxml.FXMLLoader;
  * @author Kornphon Noiprasert
  */
 public class Main extends Application {
-	
+
 	/**
 	 * The main entry point for all JavaFX applications. The start method is called
 	 * after the init method has returned, and after the system is ready for the
 	 * application to begin running.
-	 * 	 */
+	 * 
+	 * @param primaryStage is the stage for this application which the application scene can
+	 * be set.
+	 */
 	@Override
 	public void start(Stage primaryStage) {
 		// Create the Counter object (the "model" part of our app)
